@@ -14,9 +14,8 @@ namespace wordle
         string kelime, kelime1;
         char[] kel1;
         char[] kel2;
-        bool h_var_mi = false;
-        string r = "red";
-
+        bool h_var_mi=false;
+        
 
 
         private void Form1_Load(object sender, EventArgs e)
@@ -358,7 +357,7 @@ namespace wordle
                     }
                     renk(kel2[1].ToString(), "Yellow");
                 }
-
+                
                 if (kel1[3] == kel2[2])
                 {
                     switch (sat)
@@ -455,8 +454,8 @@ namespace wordle
                     }
                     renk(kel2[4].ToString(), "Green");
                 }
-                switch (sat)
-                {
+                    switch (sat)
+                    {
                     case 0:
                         if (button1.BackColor == Color.White) { button1.BackColor = Color.Gray; }
                         if (button2.BackColor == Color.White) { button2.BackColor = Color.Gray; }
@@ -925,11 +924,11 @@ namespace wordle
                     button57.BackColor = Color.Green;
                 }
                 else if (reng == "Yellow" && button57.BackColor != Color.Green)
-                {
+                { 
                     button57.BackColor = Color.Yellow;
                 }
+                }
             }
-        }
         public void renkg(string harf)
         {
             switch (harf)
@@ -966,9 +965,9 @@ namespace wordle
                 case "M": button55.BackColor = Color.Gray; break;
                 case "Ö": button56.BackColor = Color.Gray; break;
                 case "Ç": button57.BackColor = Color.Gray; break;
-
-            }
+            
         }
+    }
     }
 }
 
